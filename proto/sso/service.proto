@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package auth;
+
+import "sso/structures.proto";
+option go_package = "mirage-deadline/auth/sso-v1";
+
+
+
+service Auth {
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+  rpc Login(LoginRequest) returns (LoginResponse);
+  rpc IsAdmin(IsAdminRequest) returns (IsAdminResponse);
+}
