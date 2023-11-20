@@ -1,4 +1,4 @@
-module AuthProto
+module github.com/mirage-deadline/sso-proto
 
 go 1.21
 
